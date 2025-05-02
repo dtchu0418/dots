@@ -1,0 +1,173 @@
+{
+    "reload_style_on_change": true,
+    "height": 20, // Waybar height (to be removed for auto height)
+    "layer": "top", // Waybar at top layer
+    "mode": "dock",
+    "exclusive": "true",
+
+    // Positions
+    "modules-left": [
+      "custom/launcher",
+      "cpu",
+      "memory", 
+      "custom/weather", 
+      "hyprland/workspaces"
+    ],
+
+    "modules-right": [
+      "tray", 
+      "bluetooth", 
+      "network", 
+      "pulseaudio",  
+      "backlight", 
+      "power-profiles-daemon", 
+      "battery", 
+      "custom/lock", 
+      "clock", 
+      "custom/power-menu"
+    ],
+
+    "modules-center": [
+      "custom/spotify"
+    ],
+
+    // Modules
+    "bluetooth": {
+        "on-click": "bash ~/.config/waybar/scripts/rofi-bluetooth.sh",
+        "format": " {status}",
+    },
+
+    "custom/spotify": {
+      "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
+      "format": "{}  ",
+      "return-type": "json",
+      "on-click": "playerctl -p spotify play-pause",
+      "on-double-click-right": "playerctl -p spotify next",
+      "on-scroll-down": "playerctl -p spotify previous",
+    }, 
+
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "<span color='#f9e2af'></span>",
+        "performance": "<span color='#f9e2af'></span>",
+        "balanced": "<span color='#cdd6f4'></span>",
+        "power-saver": "<span color='#a6e3a1'></span>"
+      }
+    },
+
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "format-icons": {
+        "urgent": "<span color='#f38ba8'></span>",
+        "active": "󰮯",
+        "default": ""
+      },
+      "persistent-workspaces": {
+             "*": 5, // 5 workspaces by default on every monitor
+       }
+    },
+
+    "hyprland/window": {
+        "format": "{}"
+    },
+
+    "tray": {
+        "spacing": 10
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%b %d %Y}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    },
+
+    "cpu": {
+      "interval": 10,
+      "format": " {}%",
+      "max-length": 10,
+      "on-click": "",
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "format-alt":" {used:0.1f}GB",
+        "max-length": 10,
+    },
+
+    "backlight": {
+        "device": "eDP-1",
+        "format": "{icon}",
+        "tooltip-format": "{percent}",
+        "format-icons": ["󱩎 ", "󱩏 ", "󱩐 ", "󱩑 ", "󱩒 ", "󱩓 ", "󱩔 ", "󱩕 ", "󱩖 ", "󰛨 "],
+
+    },
+
+    "network": {
+        /* "format-wifi": "直", */
+        "format-wifi": "{icon}",
+        "format-ethernet": " ",
+        "format-disconnected": "睊",
+        "tooltip-format": "{essid}",
+        "on-click": "~/.config/waybar/scripts/network/rofi-network-manager.sh",
+        "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+    },
+
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": "婢",
+        "format-icons": {
+            "default": ["", "", "墳"]
+        },
+        "on-click": "pavucontrol &",
+        "on-scroll-up": "~/.config/hypr/scripts/volume up",
+        "on-scroll-down": "~/.config/hypr/scripts/volume down",
+        "on-click-middle": "~/.config/hypr/scripts/volume mute",
+    },
+
+    "battery": {
+      "bat": "BAT0",
+      "adapter": "ADP0",
+      "interval": 60,
+      "states": {
+          "warning": 45,
+          "critical": 20
+      },
+      "max-length": 20,
+      "format": "<span font_size='16.5pt'>{icon}</span> {capacity}%",
+      "format-warning": "<span font_size='16.5pt'>{icon}</span> {capacity}%",
+      "format-critical": "<span font_size='16.5pt'>{icon}</span> {capacity}%",
+      "format-charging": "<span font_size='16.5pt' color='#a6e3a1'>{icon}</span> <span color='#a6e3a1'>{capacity}%</span>",
+      "format-plugged": "ﮣ", 
+
+      "format-alt": "{icon} {time}",
+      "format-full": "ﮣ", 
+      "format-icons": ["󱊡", "󱊢", "󱊣"]
+    },
+
+    "custom/weather": {
+      "exec": "python3 ~/.config/waybar/scripts/weather.py",
+      "restart-interval": 300,
+      "return-type": "json",
+    },   
+
+   "custom/lock": {
+       "tooltip" : false,
+       "on-click": "swaylock-fancy -f JetBrains-Mono-Bold-Nerd-Font-Complete",
+       "format" : "",
+    },
+
+    "custom/power-menu": {
+        "format": " ⏻ ",
+        "on-click": "bash ~/.config/waybar/scripts/power-menu/powermenu.sh &",
+    }, 
+
+    "custom/launcher": {
+        "format": "",
+        "on-click": "rofi -show drun &",
+    },
+}

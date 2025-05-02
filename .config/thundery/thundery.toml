@@ -1,0 +1,9 @@
+api_key = "623d7dec97126d06e239742e0f96fcdc"
+city = "Madison, US"
+units = "Imperial"
+timeplus = 0
+timeminus = 0
+showcityname = true
+showdate = false
+timeformat = "12"
+use_colors = true

@@ -1,0 +1,6 @@
+2025/05/02-17:24:48.062 37a0 Reusing MANIFEST /home/noge/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
+2025/05/02-17:24:48.068 37a0 Recovering log #202
+2025/05/02-17:24:48.068 37a0 Reusing old log /home/noge/.config/vesktop/sessionData/Local Storage/leveldb/000202.log 
+2025/05/02-17:25:48.216 37a1 Level-0 table #207: started
+2025/05/02-17:25:48.221 37a1 Level-0 table #207: 55417 bytes OK
+2025/05/02-17:25:48.222 37a1 Delete type=0 #202
