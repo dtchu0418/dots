@@ -1,0 +1,24 @@
+<unity_prefs version_major="1" version_minor="1">
+	<pref name="Screenmanager Fullscreen mode" type="int">1</pref>
+	<pref name="Screenmanager Fullscreen mode Default" type="int">3</pref>
+	<pref name="Screenmanager Resolution Height" type="int">800</pref>
+	<pref name="Screenmanager Resolution Height Default" type="int">400</pref>
+	<pref name="Screenmanager Resolution Use Native" type="int">0</pref>
+	<pref name="Screenmanager Resolution Use Native Default" type="int">0</pref>
+	<pref name="Screenmanager Resolution Width" type="int">1280</pref>
+	<pref name="Screenmanager Resolution Width Default" type="int">640</pref>
+	<pref name="Screenmanager Window Position X" type="int">0</pref>
+	<pref name="Screenmanager Window Position Y" type="int">0</pref>
+	<pref name="UnityInstallationId" type="string">OTFmOTIxOGM0ZTFlNTk5Y2RhMzk2NTUzNGZjMjg3MGI=</pref>
+	<pref name="UnitySelectMonitor" type="int">0</pref>
+	<pref name="VS_SavedFrameRate" type="int">60</pref>
+	<pref name="VS_SavedOrientation" type="int">1</pref>
+	<pref name="VS_SavedRefreshRate" type="int">0</pref>
+	<pref name="VS_SavedResolutionX" type="int">1280</pref>
+	<pref name="VS_SavedResolutionY" type="int">800</pref>
+	<pref name="VS_SavedWindowedMode" type="int">1</pref>
+	<pref name="VS_VSyncEnabled" type="int">1</pref>
+	<pref name="unity.cloud_userid" type="string">OTFmOTIxOGM0ZTFlNTk5Y2RhMzk2NTUzNGZjMjg3MGI=</pref>
+	<pref name="unity.player_session_count" type="string">NA==</pref>
+	<pref name="unity.player_sessionid" type="string">NjIzMDk5MzUwNTQwNzk1NDQ4OA==</pref>
+</unity_prefs>
