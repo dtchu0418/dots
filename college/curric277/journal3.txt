@@ -1,0 +1,45 @@
+Journal 3 Curric 277
+For this journal I'm going to focus on writing about the shortcomings of noita and the possible ways it could be
+improved in regards to game design concepts. 
+
+First one of the biggest issues that Noita has in in regards to pacing
+The beginning of every Noita run is extremely tedious, as you end up running around the mines area trying to min-max the
+beginning of every run unless you get lucky and get a few good spells early on. 
+This leads to a number of issues, mostly in that it takes a lot of time and a decent amount of good rng to start getting
+into the late game. This also means that for new players, they end up spending an extended amount of time in the earlier
+levels repeating already explored and mastered mechanics, while making it difficult for them to practice more in-depth
+mechanics like wand-building and the alchemy system. 
+
+Mechanics like wand-building and the alchemy system, while integral to the game, end up being gated by later progression
+requiring more spells and more powerful wands in order to take advantage of both systems. The extended early game of
+Noita and punishing nature of the game also means that much of your time will be spent repeating early-game mechanics,
+unable to spend your time practicing late-game mechanics. 
+
+This leads to an obviously frustrating gameplay-loop for beginners, but the design philosophy ultimately does support this type of
+gameplay and it's eventually something that new players will have to learn and adapt to so I don't really know many ways
+this could be changed without affecting the overall experience and design philosophy of the game.
+
+Personally when going through the early game experience in my own runs, I found that even after a few hundred hours of
+experience, only a few things changed in my runs in the early game in comparison to when I first started. Most
+significantly is how consistently I can get to late-game, however the issue is that the time it takes me to progress
+through the early game has always been around the same. I think that this is one of the biggest issues with the game,
+the fact that every early game-run takes around 30 minutes or longer to start moving past early game spells and weak
+wands. 
+
+Currently I think it just takes too long for the player to progress into more interesting mechanics, and so one of the
+changes I thought would be good is by simply increasing the variation of spells, by creating a lock-out system.
+Currently the spread of spells you can acquire is randomized from a few pools of spells, categorized by tiers based on
+their strength/difficulty. In the first few levels, spells and wands are restricted to the first tier of spells and wand
+strengths. While I think this is fine, one of the biggest issues is that multiple of the same spell can drop in wands
+throughout the first few levels. This often means that players will end up with duplicates of spells they don't need.
+This is further exacerbated by the fact that spells are ranked on a rarity, and so more useful spells are further gateed
+by rng. I think that a better way to introduce players to the spell system and speed up the early game is to guarantee
+that the majority of spells within each tier can be found at least once in the levels that encompass that tier. 
+
+Many times in my own runs even with lategame spells and wands, I'll find myself struggling to find one or two spells
+that I need simply because they werent spawned in my world, and would require me to travel to parallel worlds which is
+another considerably more difficult and potentially game-crashing endeavor.
+
+Overall I think that some of the improvements that can be made to Noita center around early-game rng and consistency.
+Like any roguelike, rng is a crucial aspect to the enjoyment within the game, but when it's too harsh like in Noita it
+can lead to issues for beginners.
