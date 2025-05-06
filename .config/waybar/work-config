@@ -1,0 +1,124 @@
+{
+    "reload_style_on_change": true,
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 1,
+    "margin": 0,
+    "mode": "dock",
+    "exclusive": "true",
+
+    // modules
+    "modules-left": ["hyprland/workspaces", "tray", ],
+
+    "modules-center": ["custom/spotify"],
+
+    "modules-right": ["bluetooth", "network", "pulseaudio", "backlight", "power-profiles-daemon", "battery", "clock", ],
+
+    // modules 
+    "bluetooth": {
+        "on-click": "bash ~/.config/waybar/scripts/rofi-bluetooth.sh",
+        "format": " {status}",
+    },
+
+    "network": {
+        /* "format-wifi": "直", */
+        "format-wifi": "{icon}",
+        "format-ethernet": " ",
+        "format-disconnected": "睊",
+        "tooltip-format": "{essid}",
+        "on-click": "~/.config/waybar/scripts/network/rofi-network-manager.sh",
+        "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+    },
+
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": "婢",
+        "format-icons": {
+            "default": ["", "", "墳"]
+        },
+        "on-click": "pavucontrol &",
+        "on-scroll-up": "~/.config/hypr/scripts/volume up",
+        "on-scroll-down": "~/.config/hypr/scripts/volume down",
+        "on-click-middle": "~/.config/hypr/scripts/volume mute",
+    },
+
+    "custom/spotify": {
+      "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
+      "format": "{}  ",
+      "return-type": "json",
+      "on-click": "playerctl -p spotify play-pause",
+      "on-double-click-right": "playerctl -p spotify next",
+      "on-scroll-down": "playerctl -p spotify previous",
+      "min-length": 5,
+      "max-length:": 5,
+    }, 
+
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "<span color='#f9e2af'></span>",
+        "performance": "<span color='#f9e2af'></span>",
+        "balanced": "<span color='#babbf1'></span>",
+        "power-saver": "<span color='#a6e3a1'></span>"
+      }
+    },
+
+    "hyprland/window": {  
+      "format": "{title}"
+    },
+
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "format-icons": {
+        "urgent": "<span color='#f38ba8'></span>",
+      },
+      "persistent-workspaces": {
+             "*": 5, // 5 workspaces by default on every monitor
+       }
+    },
+
+    "hyprland/window": {
+        "format": "{}"
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%b %d %Y}",
+    },
+
+    "battery": {
+      "interval": 60,
+      "states": {
+          "warning": 45,
+          "critical": 20
+      },
+      "max-length": 20,
+      "format": "<span font_size='16.5pt'>{icon}</span> {capacity}%",
+      "format-warning": "<span font_size='16.5pt'>{icon}</span> {capacity}%",
+      "format-critical": "<span font_size='16.5pt'>{icon}</span> {capacity}%",
+      "format-charging": "<span font_size='16.5pt' color='#a6e3a1'>{icon}</span> <span color='#a6e3a1'>{capacity}%</span>",
+      "format-plugged": "ﮣ", 
+
+      "format-alt": "{icon} {time}",
+      "format-full": "ﮣ", 
+      "format-icons": ["󱊡", "󱊢", "󱊣"]
+    },
+
+
+    "backlight": {
+        "format": "{icon}",
+        "tooltip-format": "{percent}",
+        "format-icons": ["󱩎 ", "󱩏 ", "󱩐 ", "󱩑 ", "󱩒 ", "󱩓 ", "󱩔 ", "󱩕 ", "󱩖 ", "󰛨 "],
+        "on-scroll-up": "brightnessctl set +5%",
+        "on-scroll-down": "brightnessctl set 5%-"
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    }
+}
