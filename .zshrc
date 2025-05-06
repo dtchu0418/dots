@@ -1,3 +1,6 @@
+export EDITOR=nvim
+export VISUL=nvim
+
 # sourcing aliases
 source "/home/noge/.alias.sh"
 
